@@ -15,8 +15,11 @@
     <arg name="initial_pose_x" value="$(arg initial_pose_x)"/>
     <arg name="initial_pose_y" value="$(arg initial_pose_y)"/>
     <arg name="initial_pose_a" value="$(arg initial_pose_a)"/>
+    <param name="move_base/DWAPlannerROS/max_rot_vel" value="1.0"/>
   </include>
 
   <!-- Move base -->
  <include file="$(find turtlebot_navigation)/launch/includes/move_base.launch.xml"/>
+ <!-- Override the value given in dwa_local_planner_params.yaml, which is too high and makes the robot spin helplessly -->
+ <param name="move_base/DWAPlannerROS/max_rot_vel" value="1.0"/>
 </launch>

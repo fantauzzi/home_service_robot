@@ -6,7 +6,7 @@
 // Define a client for to send goal requests to the move_base server through a SimpleActionClient
 typedef actionlib::SimpleActionClient<move_base_msgs::MoveBaseAction> MoveBaseClient;
 
-bool send_robot(double x, double y, double theta, MoveBaseClient & ac) {
+bool send_robot(double x, double y, double theta, MoveBaseClient &ac) {
 
     move_base_msgs::MoveBaseGoal goal;
 
@@ -19,7 +19,7 @@ bool send_robot(double x, double y, double theta, MoveBaseClient & ac) {
     goal.target_pose.pose.position.y = y;
 
     tf2::Quaternion orientation;
-    orientation.setRPY( 0, 0, theta );
+    orientation.setRPY(0, 0, theta);
     goal.target_pose.pose.orientation.w = orientation.getW();
     goal.target_pose.pose.orientation.x = orientation.getX();
     goal.target_pose.pose.orientation.y = orientation.getY();
@@ -27,39 +27,43 @@ bool send_robot(double x, double y, double theta, MoveBaseClient & ac) {
 
 
     // Send the goal position and orientation for the robot to reach
-    ROS_INFO("Sending goal (x, y, theta)=(%f, %f, %f).", x, y , theta);
+    ROS_INFO("Sending goal (x, y, theta)=(%f, %f, %f).", x, y, theta);
     ac.sendGoal(goal);
 
     // Wait an unlimited time for the results
     ac.waitForResult();
 
     // Check if the robot reached its goal
-    if(ac.getState() == actionlib::SimpleClientGoalState::SUCCEEDED) {
+    if (ac.getState() == actionlib::SimpleClientGoalState::SUCCEEDED) {
         ROS_INFO("The base moved to the designated goal.");
         return true;
-    }
-    else {
+    } else {
         ROS_INFO("The base failed to reach the designated goal");
         return false;
     }
 
 }
-int main(int argc, char** argv){
-  // Initialize the simple_navigation_goals node
-  ros::init(argc, argv, "pick_objects");
 
-  //tell the action client that we want to spin a thread by default
-  MoveBaseClient ac("move_base", true);
+int main(int argc, char **argv) {
+    double start_x = -5;
+    double start_y = 4;
+    double finish_x = 5;
+    double finish_y = -5;
+    // Initialize the simple_navigation_goals node
+    ros::init(argc, argv, "pick_objects");
 
-  // Wait 5 sec for move_base action server to come up
-  while(!ac.waitForServer(ros::Duration(5.0))){
-    ROS_INFO("Waiting for the move_base action server to come up");
-  }
+    //tell the action client that we want to spin a thread by default
+    MoveBaseClient ac("move_base", true);
 
-  bool result=send_robot(.5, -4, 0, ac);
-  ros::Duration(5).sleep();
-  if (result)
-      send_robot(0, 4, 3.1415, ac);
+    // Wait 5 sec for move_base action server to come up
+    while (!ac.waitForServer(ros::Duration(5.0))) {
+        ROS_INFO("Waiting for the move_base action server to come up");
+    }
 
-  return 0;
+    bool result = send_robot(start_x, start_y, .0, ac);
+    ros::Duration(5).sleep();
+    if (result)
+        send_robot(finish_x, finish_y, .0, ac);
+
+    return 0;
 }

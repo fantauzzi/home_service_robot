@@ -14,6 +14,6 @@ xterm -e "roslaunch turtlebot_rviz_launchers view_navigation.launch" &
 xterm -e "rosrun add_markers add_markers" &
 sleep 2
 
-xterm -e "rosrun pick_objects pick_objects" &
+xterm -e "rosrun pick_objects pick_objects; bash" &
 
 wait

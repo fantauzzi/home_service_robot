@@ -95,7 +95,7 @@ void wait_for_robot_at(ros::NodeHandle n, double target_x, double target_y, doub
     const double tolerance_square = tolerance*tolerance;
     tf2_ros::Buffer tfBuffer;
     tf2_ros::TransformListener tfListener(tfBuffer);
-    ros::Rate rate(2);
+    ros::Rate rate(4);
     while (n.ok()) {
         geometry_msgs::TransformStamped transformStamped;
         try {
@@ -103,7 +103,7 @@ void wait_for_robot_at(ros::NodeHandle n, double target_x, double target_y, doub
                                                         ros::Time(0));
             double x = transformStamped.transform.translation.x;
             double y = transformStamped.transform.translation.y;
-            ROS_INFO("x=%f y=%f", x, y);
+            // ROS_INFO("x=%f y=%f", x, y);
             if (pow(x-target_x, 2)+pow(y-target_y, 2) <= tolerance_square)
                 break;
         }
@@ -118,11 +118,11 @@ void wait_for_robot_at(ros::NodeHandle n, double target_x, double target_y, doub
 int main(int argc, char **argv) {
     ros::init(argc, argv, "add_markers");
     ros::NodeHandle n;
-    double tolerance = .5;
-    double start_x = 0;
-    double start_y = -4;
-    double finish_x = 0;
-    double finish_y = 4;
+    double tolerance = .33;
+    double start_x = -5;
+    double start_y = 4;
+    double finish_x = 5;
+    double finish_y = -5;
 
     ros::Rate r(1);
     ros::Publisher marker_pub = n.advertise<visualization_msgs::Marker>("visualization_marker", 1);

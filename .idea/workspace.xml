@@ -138,6 +138,7 @@
   <component name="ChangeListManager">
     <list default="true" id="19814a34-eea0-4c1d-8a2a-308b1f4518b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/add_markers/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/add_markers/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/add_markers/src/add_markers.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/add_markers/src/add_markers.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -910,7 +911,7 @@
       <option name="presentableId" value="Default" />
       <updated>1587716367204</updated>
       <workItem from="1587716368537" duration="808000" />
-      <workItem from="1587717188398" duration="2664000" />
+      <workItem from="1587717188398" duration="10867000" />
     </task>
     <servers />
   </component>

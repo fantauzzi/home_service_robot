@@ -95,7 +95,7 @@ void wait_for_robot_at(ros::NodeHandle n, double target_x, double target_y, doub
     const double tolerance_square = tolerance*tolerance;
     tf2_ros::Buffer tfBuffer;
     tf2_ros::TransformListener tfListener(tfBuffer);
-    ros::Rate rate(5);
+    ros::Rate rate(2);
     while (n.ok()) {
         geometry_msgs::TransformStamped transformStamped;
         try {

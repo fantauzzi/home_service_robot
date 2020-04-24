@@ -6,7 +6,7 @@ xterm -e "roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=${PICK_O
 sleep 2
 
 MAP_FILE=${PICK_OBJECTS}/maps/training_world.yaml
-xterm -e "roslaunch turtlebot_gazebo amcl_demo.launch map_file:=${MAP_FILE} initial_pose_a:=-1.5708" &
+xterm -e "roslaunch turtlebot_gazebo amcl_demo.launch map_file:=${MAP_FILE} initial_pose_a:=.0" &
 sleep 2
 
 xterm -e "roslaunch turtlebot_rviz_launchers view_navigation.launch" &

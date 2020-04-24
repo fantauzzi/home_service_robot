@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData">
+    <serverData>
+      <paths name="Remote Host (0d3215bf-f8aa-436b-8bfb-fa9833e582e5)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="/usr/src/gmock" web="/" />
+            <mapping local="/usr/src/gtest" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="pi4 toolchain (210c3773-1452-4db5-8207-952e6eb70a81)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="/usr/src/gmock" web="/" />
+            <mapping local="/usr/src/gtest" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

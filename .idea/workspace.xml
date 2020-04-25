@@ -5,28 +5,29 @@
       <config projectName="Project" targetName="gmapping_test_turtlebot.bag" />
       <config projectName="Project" targetName="_run_tests_gmapping_rostest" />
       <config projectName="Project" targetName="bond_generate_messages_eus" />
+      <config projectName="Project" targetName="geometry_msgs_generate_messages_lisp" />
       <config projectName="Project" targetName="tf_generate_messages_py" />
       <config projectName="Project" targetName="clean_test_results_turtlebot_description" />
       <config projectName="Project" targetName="tf2_msgs_generate_messages_lisp" />
-      <config projectName="Project" targetName="actionlib_msgs_generate_messages_nodejs" />
-      <config projectName="Project" targetName="_catkin_empty_exported_target" />
+      <config projectName="Project" targetName="run_tests_gmapping_rostest" />
       <config projectName="Project" targetName="tf_generate_messages_cpp" />
       <config projectName="Project" targetName="std_msgs_generate_messages_lisp" />
       <config projectName="Project" targetName="add_markers" />
-      <config projectName="Project" targetName="_run_tests_turtlebot_description" />
+      <config projectName="Project" targetName="diagnostic_msgs_generate_messages_nodejs" />
       <config projectName="Project" targetName="rosgraph_msgs_generate_messages_eus" />
-      <config projectName="Project" targetName="pick_objects" />
+      <config projectName="Project" targetName="geometry_msgs_generate_messages_py" />
       <config projectName="Project" targetName="visualization_msgs_generate_messages_lisp" />
-      <config projectName="Project" targetName="turtlebot_description_xacro_generated_to_devel_space_" />
+      <config projectName="Project" targetName="_run_tests_turtlebot_description" />
       <config projectName="Project" targetName="actionlib_generate_messages_cpp" />
-      <config projectName="Project" targetName="sensor_msgs_generate_messages_lisp" />
       <config projectName="Project" targetName="run_tests" />
       <config projectName="Project" targetName="download_extra_data" />
       <config projectName="Project" targetName="nodelet_generate_messages_eus" />
+      <config projectName="Project" targetName="rosgraph_msgs_generate_messages_py" />
       <config projectName="Project" targetName="nav_msgs_generate_messages_py" />
-      <config projectName="Project" targetName="gmapping_test_upside_down.bag" />
+      <config projectName="Project" targetName="_run_tests_gmapping_rostest_test_basic_localization_symmetry.launch" />
       <config projectName="Project" targetName="actionlib_msgs_generate_messages_eus" />
-      <config projectName="Project" targetName="_run_tests_turtlebot_description_gtest_turtlebot_description_test_urdf" />
+      <config projectName="Project" targetName="clean_test_results_gmapping" />
+      <config projectName="Project" targetName="_run_tests_gmapping_rostest_test_basic_localization_stage_replay2.launch" />
       <config projectName="Project" targetName="gmapping_basic_localization_stage_groundtruth.pgm" />
       <config projectName="Project" targetName="tests" />
       <config projectName="Project" targetName="visualization_msgs_generate_messages_cpp" />
@@ -42,36 +43,37 @@
       <config projectName="Project" targetName="visualization_msgs_generate_messages_py" />
       <config projectName="Project" targetName="roscpp_generate_messages_py" />
       <config projectName="Project" targetName="tf_generate_messages_eus" />
-      <config projectName="Project" targetName="run_tests_gmapping_rostest" />
+      <config projectName="Project" targetName="run_tests_turtlebot_description_gtest" />
+      <config projectName="Project" targetName="clean_test_results" />
       <config projectName="Project" targetName="run_tests_gmapping_rostest_test_basic_localization_stage_replay.launch" />
-      <config projectName="Project" targetName="_run_tests_gmapping_rostest_test_basic_localization_symmetry.launch" />
+      <config projectName="Project" targetName="diagnostic_msgs_generate_messages_cpp" />
       <config projectName="Project" targetName="actionlib_generate_messages_eus" />
       <config projectName="Project" targetName="actionlib_msgs_generate_messages_py" />
-      <config projectName="Project" targetName="clean_test_results" />
+      <config projectName="Project" targetName="nodelet_generate_messages_py" />
+      <config projectName="Project" targetName="slam_gmapping_replay" />
       <config projectName="Project" targetName="actionlib_msgs_generate_messages_lisp" />
-      <config projectName="Project" targetName="run_tests_turtlebot_description" />
-      <config projectName="Project" targetName="clean_test_results_gmapping" />
+      <config projectName="Project" targetName="sensor_msgs_generate_messages_lisp" />
       <config projectName="Project" targetName="rosgraph_msgs_generate_messages_lisp" />
       <config projectName="Project" targetName="run_tests_gmapping_rostest_test_basic_localization_laser_different_beamcount.test" />
       <config projectName="Project" targetName="_run_tests_gmapping_rostest_test_basic_localization_upside_down.launch" />
-      <config projectName="Project" targetName="diagnostic_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="bond_generate_messages_cpp" />
       <config projectName="Project" targetName="geometry_msgs_generate_messages_cpp" />
       <config projectName="Project" targetName="visualization_msgs_generate_messages_eus" />
       <config projectName="Project" targetName="slam_gmapping_nodelet" />
       <config projectName="Project" targetName="tf2_msgs_generate_messages_cpp" />
-      <config projectName="Project" targetName="run_tests_gmapping_rostest_test_basic_localization_stage_replay2.launch" />
+      <config projectName="Project" targetName="gmock" />
       <config projectName="Project" targetName="gtest" />
       <config projectName="Project" targetName="gmock_main" />
+      <config projectName="Project" targetName="actionlib_msgs_generate_messages_nodejs" />
       <config projectName="Project" targetName="diagnostic_msgs_generate_messages_eus" />
-      <config projectName="Project" targetName="nodelet_generate_messages_py" />
       <config projectName="Project" targetName="sensor_msgs_generate_messages_nodejs" />
-      <config projectName="Project" targetName="diagnostic_msgs_generate_messages_cpp" />
       <config projectName="Project" targetName="actionlib_generate_messages_py" />
       <config projectName="Project" targetName="nav_msgs_generate_messages_cpp" />
       <config projectName="Project" targetName="run_tests_gmapping_rostest_test_basic_localization_upside_down.launch" />
       <config projectName="Project" targetName="tf_generate_messages_nodejs" />
       <config projectName="Project" targetName="actionlib_generate_messages_lisp" />
       <config projectName="Project" targetName="sensor_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="run_tests_gmapping" />
       <config projectName="Project" targetName="bond_generate_messages_nodejs" />
       <config projectName="Project" targetName="actionlib_generate_messages_nodejs" />
       <config projectName="Project" targetName="std_msgs_generate_messages_nodejs" />
@@ -80,48 +82,46 @@
       <config projectName="Project" targetName="sensor_msgs_generate_messages_py" />
       <config projectName="Project" targetName="gmapping-rtest" />
       <config projectName="Project" targetName="std_msgs_generate_messages_py" />
-      <config projectName="Project" targetName="gmapping_hallway_slow_2011-03-04-21-41-33.bag" />
-      <config projectName="Project" targetName="rosgraph_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="gmapping_test_upside_down.bag" />
+      <config projectName="Project" targetName="nodelet_generate_messages_lisp" />
       <config projectName="Project" targetName="_run_tests_gmapping" />
       <config projectName="Project" targetName="geometry_msgs_generate_messages_eus" />
-      <config projectName="Project" targetName="gmapping_test_replay_crash.bag" />
-      <config projectName="Project" targetName="run_tests_gmapping" />
+      <config projectName="Project" targetName="turtlebot_description_xacro_generated_to_devel_space_" />
       <config projectName="Project" targetName="tf2_msgs_generate_messages_eus" />
       <config projectName="Project" targetName="roscpp_generate_messages_eus" />
-      <config projectName="Project" targetName="run_tests_turtlebot_description_gtest" />
+      <config projectName="Project" targetName="run_tests_gmapping_rostest_test_basic_localization_stage_replay2.launch" />
       <config projectName="Project" targetName="nav_msgs_generate_messages_nodejs" />
-      <config projectName="Project" targetName="bond_generate_messages_py" />
+      <config projectName="Project" targetName="gmapping_test_replay_crash.bag" />
       <config projectName="Project" targetName="visualization_msgs_generate_messages_nodejs" />
       <config projectName="Project" targetName="sensor_msgs_generate_messages_cpp" />
       <config projectName="Project" targetName="tf_generate_messages_lisp" />
       <config projectName="Project" targetName="tf2_msgs_generate_messages_nodejs" />
       <config projectName="Project" targetName="_run_tests_gmapping_rostest_test_basic_localization_stage.launch" />
-      <config projectName="Project" targetName="doxygen" />
-      <config projectName="Project" targetName="run_tests_gmapping_rostest_test_basic_localization_symmetry.launch" />
-      <config projectName="Project" targetName="diagnostic_msgs_generate_messages_nodejs" />
+      <config projectName="Project" targetName="_catkin_empty_exported_target" />
+      <config projectName="Project" targetName="_run_tests_turtlebot_description_gtest_turtlebot_description_test_urdf" />
+      <config projectName="Project" targetName="roscpp_generate_messages_nodejs" />
       <config projectName="Project" targetName="geometry_msgs_generate_messages_nodejs" />
       <config projectName="Project" targetName="_run_tests_gmapping_rostest_test_basic_localization_stage_replay.launch" />
-      <config projectName="Project" targetName="bond_generate_messages_cpp" />
+      <config projectName="Project" targetName="doxygen" />
       <config projectName="Project" targetName="roscpp_generate_messages_cpp" />
-      <config projectName="Project" targetName="geometry_msgs_generate_messages_lisp" />
-      <config projectName="Project" targetName="rosgraph_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="rosgraph_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="bond_generate_messages_py" />
       <config projectName="Project" targetName="std_msgs_generate_messages_eus" />
-      <config projectName="Project" targetName="nodelet_generate_messages_lisp" />
-      <config projectName="Project" targetName="bond_generate_messages_lisp" />
-      <config projectName="Project" targetName="nav_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="pick_objects" />
+      <config projectName="Project" targetName="turtlebot_description_test_urdf" />
       <config projectName="Project" targetName="nodelet_generate_messages_cpp" />
       <config projectName="Project" targetName="nodelet_generate_messages_nodejs" />
-      <config projectName="Project" targetName="_run_tests_gmapping_rostest_test_basic_localization_stage_replay2.launch" />
+      <config projectName="Project" targetName="nav_msgs_generate_messages_lisp" />
       <config projectName="Project" targetName="gmapping_basic_localization_stage_indexed.bag" />
       <config projectName="Project" targetName="actionlib_msgs_generate_messages_cpp" />
-      <config projectName="Project" targetName="slam_gmapping_replay" />
+      <config projectName="Project" targetName="diagnostic_msgs_generate_messages_py" />
       <config projectName="Project" targetName="_run_tests_gmapping_rostest_test_basic_localization_laser_different_beamcount.test" />
-      <config projectName="Project" targetName="roscpp_generate_messages_nodejs" />
+      <config projectName="Project" targetName="run_tests_turtlebot_description" />
+      <config projectName="Project" targetName="run_tests_gmapping_rostest_test_basic_localization_symmetry.launch" />
       <config projectName="Project" targetName="run_tests_turtlebot_description_gtest_turtlebot_description_test_urdf" />
-      <config projectName="Project" targetName="gmock" />
       <config projectName="Project" targetName="run_tests_gmapping_rostest_test_basic_localization_stage.launch" />
-      <config projectName="Project" targetName="turtlebot_description_test_urdf" />
-      <config projectName="Project" targetName="geometry_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="gmapping_hallway_slow_2011-03-04-21-41-33.bag" />
+      <config projectName="Project" targetName="bond_generate_messages_lisp" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -139,8 +139,7 @@
     <list default="true" id="19814a34-eea0-4c1d-8a2a-308b1f4518b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pick_objects/maps/training_world.orig.pgm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pick_objects/maps/training_world.orig.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/add_markers/src/add_markers.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/add_markers/src/add_markers.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -914,7 +913,8 @@
       <workItem from="1587716368537" duration="808000" />
       <workItem from="1587717188398" duration="13045000" />
       <workItem from="1587739774617" duration="1971000" />
-      <workItem from="1587821698041" duration="4535000" />
+      <workItem from="1587821698041" duration="5710000" />
+      <workItem from="1587842846961" duration="2928000" />
     </task>
     <servers />
   </component>

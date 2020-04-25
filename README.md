@@ -73,3 +73,8 @@ The complete simulation:
 - the marker appears at the drop-off zone when the robot reaches it. 
 
 # How it Works
+The application leverages the ROS [navigation package](http://wiki.ros.org/navigation/Tutorials/RobotSetup) and, for simulation and operation of the robot, the [TurtleBot 2 stacks](http://wiki.ros.org/Robots/TurtleBot#Robots.2FTurtleBot.2Fkinetic.TurtleBot2).
+
+In addition, the application is comprised of two ROS nodes: `add_markers` and `pick_objects`. Their implementation is based on ROS tutorials.
+
+Node `add_markers` uses the stack [tf2_ros](http://wiki.ros.org/tf2_ros) to track the pose of the robot base, transform it to the map reference frame, and determine when its position is close to the pickup or drop-off area. It also uses the RViz ability to [display markers](http://wiki.ros.org/rviz/Tutorials/Markers%3A%20Basic%20Shapes) on its graphic visualization. The node directs RViz to display and remove the marker by sending messages over topic `visualization_marker`.

@@ -73,8 +73,13 @@ The complete simulation:
 - the marker appears at the drop-off zone when the robot reaches it. 
 
 # How it Works
-The application leverages the ROS [navigation package](http://wiki.ros.org/navigation/Tutorials/RobotSetup) and, for simulation and operation of the robot, the [TurtleBot 2 stacks](http://wiki.ros.org/Robots/TurtleBot#Robots.2FTurtleBot.2Fkinetic.TurtleBot2).
+The application leverages the ROS [navigation package](http://wiki.ros.org/navigation/Tutorials/RobotSetup) and, for simulation and operation of the robot, the [TurtleBot 2 stacks](http://wiki.ros.org/Robots/TurtleBot#Robots.2FTurtleBot.2Fkinetic.TurtleBot2). [Package `amcl`](http://wiki.ros.org/amcl?distro=kinetic) provides adaptive Monte-Carlo localization (a particles filter) that tracks the robot pose in a known map.
 
-In addition, the application is comprised of two ROS nodes: `add_markers` and `pick_objects`. Their implementation is based on ROS tutorials.
+Tha map was previously built with the [`slam_gmapping` stack](http://wiki.ros.org/slam_gmapping?distro=kinetic), which provides laser-based SLAM capabilities, and builds an occupancy grid map. Robot TurtleBot is equipped with a Microsoft Kinect, [package `depthimage_to_laserscan`](http://wiki.ros.org/depthimage_to_laserscan) uses it to "fake" a lidar. 
 
-Node `add_markers` uses the stack [tf2_ros](http://wiki.ros.org/tf2_ros) to track the pose of the robot base, transform it to the map reference frame, and determine when its position is close to the pickup or drop-off area. It also uses the RViz ability to [display markers](http://wiki.ros.org/rviz/Tutorials/Markers%3A%20Basic%20Shapes) on its graphic visualization. The node directs RViz to display and remove the marker by sending messages over topic `visualization_marker`.
+In addition, two ROS nodes have been developed specifically for the application: `add_markers` and `pick_objects`. Their implementation is based on ROS tutorials.
+
+Node `add_markers` uses the stack [tf2_ros](http://wiki.ros.org/tf2_ros) to track the pose of the robot base, transform it to the map reference frame, and determine when the robot is close to the pickup or drop-off area. It also uses the RViz ability to [display markers](http://wiki.ros.org/rviz/Tutorials/Markers%3A%20Basic%20Shapes) on its graphic visualization. The node directs RViz to display and remove the marker by sending messages over topic `visualization_marker`.
+
+Node `pick_objects` uses the [`move_base` package](http://wiki.ros.org/move_base) to direct the robot to reach a given goal pose, sending `move_base_msgs::MoveBaseGoal` action requests to it. The [`navigation` stack](http://wiki.ros.org/navigation) uses Dijkstra's algorithm to plans the trajectory to reach the assigned goal, and re-plan it as necessary to avoid obstacles, while directing the robot (simulation, in this case) to follow it.
+

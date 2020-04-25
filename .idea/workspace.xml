@@ -139,7 +139,7 @@
     <list default="true" id="19814a34-eea0-4c1d-8a2a-308b1f4518b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/add_markers/src/add_markers.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/add_markers/src/add_markers.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pick_objects/src/pick_objects.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/pick_objects/src/pick_objects.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -914,7 +914,7 @@
       <workItem from="1587717188398" duration="13045000" />
       <workItem from="1587739774617" duration="1971000" />
       <workItem from="1587821698041" duration="5710000" />
-      <workItem from="1587842846961" duration="2928000" />
+      <workItem from="1587842846961" duration="4901000" />
     </task>
     <servers />
   </component>
@@ -930,5 +930,9 @@
       <screen x="65" y="24" width="2495" height="1416" />
     </state>
     <state x="791" y="354" width="1307" height="728" key="SettingsEditor/372.1440.1920.1080/65.24.2495.1416@65.24.2495.1416" timestamp="1587717162004" />
+    <state x="437" y="1436" width="1855" height="991" maximized="true" key="dock-window-2" timestamp="1587846237425">
+      <screen x="372" y="1440" width="1920" height="1080" />
+    </state>
+    <state x="437" y="1436" width="1855" height="991" maximized="true" key="dock-window-2/372.1440.1920.1080/65.24.2495.1416@65.24.2495.1416" timestamp="1587846237425" />
   </component>
 </project>
